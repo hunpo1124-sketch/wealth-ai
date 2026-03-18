@@ -7,11 +7,11 @@ export default defineConfig({
   plugins: [
     vue(),
     VitePWA({
-      registerType: 'autoUpdate',
+      registerType: 'prompt',
       workbox: {
-        cleanupOutdatedCaches: true
+        cleanupOutdatedCaches: true,
+        globPatterns: []
       },
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
         name: 'WealthAI',
         short_name: 'WealthAI',
