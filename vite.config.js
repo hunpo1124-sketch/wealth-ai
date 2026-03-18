@@ -32,7 +32,7 @@ export default defineConfig({
       }
     })
   ],
-  base: '/wealth-ai/',
+  base: '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
